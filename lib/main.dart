@@ -6,7 +6,7 @@ import 'screens/fish_order.dart';
 
 void main() {
   runApp(
-    Provider(
+    ChangeNotifierProvider(
       create: (context) => FishModel(name: 'Salmon', number: 10, size: 'big'),
       child: const MyApp(),
     ),
