@@ -1,13 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_ex/models/fish_model.dart';
 
+import 'models/fish_model.dart';
+import 'models/seafish_model.dart';
 import 'screens/fish_order.dart';
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
-      create: (context) => FishModel(name: 'Salmon', number: 10, size: 'big'),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) =>
+              FishModel(name: 'Salmon', number: 10, size: 'big'),
+          child: const MyApp(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) =>
+              SeaFishModel(name: 'Tuna', tunaNumber: 0, size: 'middle'),
+          child: const MyApp(),
+        ),
+      ],
       child: const MyApp(),
     ),
   );
