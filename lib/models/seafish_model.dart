@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class FishModel with ChangeNotifier {
+class SeaFishModel with ChangeNotifier {
   final String name;
-  int number;
+  int tunaNumber;
   final String size;
 
-  FishModel({
+  SeaFishModel({
     required this.name,
-    required this.number,
+    required this.tunaNumber,
     required this.size,
   });
 
-  void changeFishNumber() {
-    number++;
+  void changeSeaFishNumber() {
+    tunaNumber++;
     notifyListeners();
   }
 }
