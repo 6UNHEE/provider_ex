@@ -1,4 +1,5 @@
 # provider_ex
+<<<<<<< HEAD
 
 A new Flutter project.
 
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+상태관리 패키지 provider 실습 
+>>>>>>> b30f269875770979834e2f49d0430cdf216bfaaf
